@@ -1,0 +1,14 @@
+ml-classification-deployment/
+│
+├── app.py                          # Streamlit interactive application
+├── requirements.txt                # Pinned production dependencies
+├── README.md                       # Comprehensive documentation (Section 3 - Step 5)
+├── train.py                        # Standalone model training, validation & serialization script
+├── test_data.csv                   # Holdout test split (20%, 114 instances with ground truth)
+│
+└── model/                          # Serialized scikit-learn pipeline artifacts
+    ├── logistic_regression.joblib
+    ├── decision_tree.joblib
+    ├── knn.joblib
+    ├── naive_bayes.joblib
+    └── svm.joblib

@@ -1,0 +1,62 @@
+Deployment Guide: Streamlit Community Cloud
+Step 1: Initialize Git Repository
+From your local terminal, push your assignment files to GitHub:
+
+git init
+git add app.py requirements.txt README.md test_data.csv train.py model/
+git commit -m "feat: complete classification models, test set, and streamlit application"
+git branch -M main
+git remote add origin https://github.com/<your-username>/ml-classification-deployment.git
+git push -u origin main
+
+Step 2: Deploy to Streamlit Community Cloud
+Navigate to share.streamlit.io and log in using your GitHub account.
+
+Click the "New app" button in the upper-right corner.
+
+Select your repository: <your-username>/ml-classification-deployment.
+
+Set the branch to main.
+
+Set the Main file path to app.py.
+
+Click "Deploy!".
+
+Once deployed, verify that:
+
+The app boots without dependencies missing.
+
+Uploading test_data.csv calculates all 6 metrics for each selected model.
+
+The dropdown toggles between models and the "Compare All 5 Models" mode correctly.
+
+Copy the public URL (e.g., https://<your-subdomain>.streamlit.app).
+
+Final Submission Checklist & PDF Assembly
+Assemble a single PDF document in the following sequence:
+
+=============================================================================
+DOCUMENT STRUCTURE: BITS_AIML_Assignment2_Anmol_Ahlawat.pdf
+=============================================================================
+1. Cover Header:
+   - Student Name: Anmol Ahlawat
+   - Degree: M.Tech (AIML), Work Integrated Learning Programmes Division
+   - Course: Machine Learning (Assignment 2)
+   - Date of Submission: November 2026
+
+2. Mandatory Public Links (Clickable):
+   - GitHub Repository URL: https://github.com/<your-username>/ml-classification-deployment
+   - Live Streamlit App URL: https://<your-subdomain>.streamlit.app
+
+3. Proof of Lab Execution (1 Mark):
+   - High-resolution screenshot of the assignment executed inside BITS Virtual Lab.
+
+4. GitHub README Content:
+   - a. Problem Statement
+   - b. Dataset Description
+   - c. GitHub Repository Link
+   - d. Models Used:
+        * Filled Evaluation Metrics Comparison Table
+        * Model Performance Observations
+        * Overall Winner Selection and Justification
+=============================================================================
