@@ -25,7 +25,7 @@ from sklearn.metrics import (
     classification_report,
     roc_curve
 )
-
+run train.py
 # Page Configuration & Modern Clean Layout
 st.set_page_config(
     page_title="Breast Cancer Diagnostics ML Suite | BITS Pilani",
