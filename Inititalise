@@ -1,0 +1,5 @@
+pip install -r requirements.txt
+python train.py
+git add model/
+git commit -m 'Add trained model artifacts"
+git push
